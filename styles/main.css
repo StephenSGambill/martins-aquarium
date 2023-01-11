@@ -36,13 +36,10 @@ body {
     flex-direction: column;
     margin-left: 20px;
     color: black;
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
     height: 1000px;
    
 }
-.fishCardFlex {
+.fishList {
     display: flex;
     padding: 20px;
     background-color: #0077b6;
@@ -51,9 +48,14 @@ body {
     margin-top: 10px;
     font-size: 20px;
     color: #caf0f8;
+    flex-wrap: wrap;
+    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
 
 }
-.fishCardPic {
+.fish__image {
     height: 200px;
     width: 200px;
     border-radius: 5px;

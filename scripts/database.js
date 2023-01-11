@@ -9,12 +9,87 @@ const database = {
         {
             name: "Bart",
             species: "goldfish", 
-            food: "crustaceans",
-            size: 3,
-            harvested: "Brazil",
+            food: "Crustaceans",
+            length: 3,
+            location: "Brazil",
+            image: "/images/fish2.jpeg"
+        },
+        {
+            name: "Larry",
+            species: "Goldfish", 
+            food: "pancakes",
+            length: 5,
+            location: "Cuba",
+            image: "/images/nemo.jpeg"
+
+        },
+        {
+            name: "Angelina",
+            species: "Retriever", 
+            food: "cheesburgers",
+            length: 27,
+            location: "Peru",
+            image: "/images/Cichlid.jpeg"
+
+        },
+        {
+            name: "Bart",
+            species: "goldfish", 
+            food: "Crustaceans",
+            length: 3,
+            location: "Brazil",
+            image: "/images/fish2.jpeg"
+        },
+        {
+            name: "Larry",
+            species: "Goldfish", 
+            food: "pancakes",
+            length: 5,
+            location: "Cuba",
+            image: "/images/nemo.jpeg"
+
+        },
+        {
+            name: "Angelina",
+            species: "Retriever", 
+            food: "cheesburgers",
+            length: 27,
+            location: "Peru",
+            image: "/images/Cichlid.jpeg"
+
+        },
+        {
+            name: "Bart",
+            species: "goldfish", 
+            food: "Crustaceans",
+            length: 3,
+            location: "Brazil",
+            image: "/images/fish2.jpeg"
+        },
+        {
+            name: "Larry",
+            species: "Goldfish", 
+            food: "pancakes",
+            length: 5,
+            location: "Cuba",
+            image: "/images/nemo.jpeg"
+
+        },
+        {
+            name: "Angelina",
+            species: "Retriever", 
+            food: "cheesburgers",
+            length: 27,
+            location: "Peru",
+            image: "/images/Cichlid.jpeg"
 
         }
     ]
 }
 
-console.log(database)
+//export current database to make available to other modules
+export const getFish = () => {
+    return database.fish.map(fish => ({...fish}))
+}
+
+//console.log(database.fish[0])
